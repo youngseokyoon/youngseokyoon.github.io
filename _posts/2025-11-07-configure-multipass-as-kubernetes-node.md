@@ -1,9 +1,12 @@
 ---
 layout: post
-title: "How to configure Multipass as a kubernetes node"
+title: How to configure Multipass as a kubernetes node
 date: 2025-11-07 13:46:28 +09:00
-tags: ["kubernetes", "multipass"]
-categories: ["kubernetes"]
+tags:
+  - kubernetes
+  - multipass
+categories:
+  - kubernetes
 ---
 
 # Multipass  
