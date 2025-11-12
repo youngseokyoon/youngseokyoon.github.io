@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "daily"
-date: 2025-11-12 13:46:28 +09:00
-tags: [null]
-categories: ["null"]
+title: "How to configure Multipass as a kubernetes node"
+date: 2025-11-07 13:46:28 +09:00
+tags: ["kubernetes", "multipass"]
+categories: ["kubernetes"]
 ---
+
 # Multipass  
   
 해당 문서는 Ubuntu 24.04 PC 기준으로 작성 됨.  
