@@ -4,8 +4,8 @@
 set -euo pipefail
 
 TARGET_DIR="_posts"
-START_DATE="2025-05-10"
-COUNT=10
+START_DATE="2025-08-15"
+COUNT=100
 
 mkdir -p "$TARGET_DIR"
 
