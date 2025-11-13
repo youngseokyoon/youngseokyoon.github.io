@@ -1,6 +1,6 @@
 ---
 layout: post
-title: configure-containerd-to-ubuntu24.04
+title: How to configure containerd to ubuntu24.04
 date: 2025-10-08
 tags:
   - ubuntu
