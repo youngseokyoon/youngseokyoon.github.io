@@ -15,11 +15,9 @@ Ubuntu 24.04 환경에서 k3s k8s 클러스터에 ArgoCD 를 helm charts 를 사
 # Prerequisites
 - [k3s cluster](https://k3s.io/)
 
-
 Multipass 환경에서 K3s 및 ArgoCD를 이용한 도메인 접속이 가능하도록 구성한 문서
 
-## Traefik?[](https://youngseokyoon.github.io/gitops-demo/docs/argocd/argocd-configure-k3s.html#traefik)
-
+## [Traefik?](https://github.com/traefik/traefik)
 컨테이너나 Kubernetes 환경에서 동작하는 Reverse Proxy, 인그레스 컨트롤러(Ingress Controller) 임.
 
 Traefik is a modern HTTP reverse proxy and load balancer
