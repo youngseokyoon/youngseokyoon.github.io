@@ -8,7 +8,6 @@ tags:
 categories:
   - kubernetes
 ---
-
 # Multipass  
   
 해당 문서는 Ubuntu 24.04 PC 기준으로 작성 됨.  
