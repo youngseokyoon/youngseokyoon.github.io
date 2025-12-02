@@ -27,7 +27,7 @@ imgur 에서 신규 유저 가입 중단 및 신규 app 등록이 중단 된 것
 [cloud storage services 비교](https://github.com/addozhang/obsidian-image-upload-toolkit#supported-storage-services-8-providers) 참고해서 결정함.
 
 | Service          | Free Tier     | Rating | Best For             |
-| ---------------- | ------------- | ------ | -------------------- |
+|------------------|---------------|--------|----------------------|
 | Imgur            | Limited       | ⭐⭐⭐    | Personal blogs       |
 | GitHub           | Unlimited     | ⭐⭐⭐⭐   | Open source projects |
 | Cloudflare R2    | Pay-as-you-go | ⭐⭐⭐⭐⭐  | Professional use     |
@@ -36,6 +36,7 @@ imgur 에서 신규 유저 가입 중단 및 신규 app 등록이 중단 된 것
 | TencentCloud COS | Pay-as-you-go | ⭐⭐⭐⭐   | Chinese users        |
 | Qiniu Kodo       | Pay-as-you-go | ⭐⭐⭐⭐   | Chinese users        |
 | ImageKit         | Limited       | ⭐⭐⭐⭐   | CDN optimization     |
+
 비용 걱정으로 인해 무료로 가입이 가능하면서 사용량이 충분하면서,
 평점이 높고 global 하게 사용할 수 있을 것 같은 Cloudflare R2 로 결정.
 
@@ -46,39 +47,39 @@ imgur 에서 신규 유저 가입 중단 및 신규 app 등록이 중단 된 것
 가입을 할 때 신용/체크카드 등록이 필요.
 
 - Free tier 사용량 참고
-![cloudflare-plugin/uvildl5f8new|50%](https://pub-dcf0b2529ee44fbfb67ee348978333d1.r2.dev/2025-12-02-cloudflare-plugin/uvildl5f8new.png)
+![cloudflare-plugin/uvildl5f8new](https://pub-dcf0b2529ee44fbfb67ee348978333d1.r2.dev/2025-12-02-cloudflare-plugin/uvildl5f8new.png)
 
 
 # Cloudflare R2 관련 설정
 ## Bucket 생성하기
-![cloudflare-plugin/3wjd7dvi4nbq|150](https://pub-dcf0b2529ee44fbfb67ee348978333d1.r2.dev/2025-11-25-cloudflare-plugin/3wjd7dvi4nbq.png)
+![cloudflare-plugin/3wjd7dvi4nbq](https://pub-dcf0b2529ee44fbfb67ee348978333d1.r2.dev/2025-11-25-cloudflare-plugin/3wjd7dvi4nbq.png)
 
 ## R2 API Token 생성하기
 
 1. https://dash.cloudflare.com 접속 
 2. 왼쪽 메뉴 R2 Object Storage -> 개요 클릭
 
-![ovjgukdz5lp.png|150](https://pub-dcf0b2529ee44fbfb67ee348978333d1.r2.dev/imagetest-0vjgukdz5lp0.png)
+![ovjgukdz5lp.png](https://pub-dcf0b2529ee44fbfb67ee348978333d1.r2.dev/imagetest-0vjgukdz5lp0.png)
 
 3. Account Details -> API Tokens Manage 클릭
 
-![mkp53v9jr75h.png|150](https://pub-dcf0b2529ee44fbfb67ee348978333d1.r2.dev/mkp53v9jr75h.png)
+![mkp53v9jr75h.png](https://pub-dcf0b2529ee44fbfb67ee348978333d1.r2.dev/mkp53v9jr75h.png)
 
 4. User API 토큰 생성
 
-![[6p504jjnq3ff.png|150](https://pub-dcf0b2529ee44fbfb67ee348978333d1.r2.dev/6p504jjnq3ff.png)
+![[6p504jjnq3ff.png](https://pub-dcf0b2529ee44fbfb67ee348978333d1.r2.dev/6p504jjnq3ff.png)
 
 5. API 토큰 생성
 - obsidian-images 라는 버킷에만 접근 가능한 1년 access Token 생성함
 - 값 설정 후 Create User API Token 클릭
 
-![btrb4duevllo.png|200](https://pub-dcf0b2529ee44fbfb67ee348978333d1.r2.dev/btrb4duevllo.png)
+![btrb4duevllo.png](https://pub-dcf0b2529ee44fbfb67ee348978333d1.r2.dev/btrb4duevllo.png)
 
 5. 생성된 User API Token 정보 기록하기
 Token value, Access Key ID, Secret Access Key, endpoints 정보를 기록해준다.
 해당 정보는 외부에 공개 되지 않도록 주의.
 
-[![jxkfnp5ifz0e.png|200](https://pub-dcf0b2529ee44fbfb67ee348978333d1.r2.dev/jxkfnp5ifz0e.png)
+[![jxkfnp5ifz0e.png](https://pub-dcf0b2529ee44fbfb67ee348978333d1.r2.dev/jxkfnp5ifz0e.png)
 
 ## R2 Bucket 설정
 위의 설정을 하고 테스트를 하면 upload 실패가 발생.
@@ -135,7 +136,7 @@ CORS Policy 를 클릭하면, 아래 처럼 localhost:3000 을 통한 GET 만 �
 
 설정 확인
 
-![cloudflare-plugin/96n1j6ngatjl|400](https://pub-dcf0b2529ee44fbfb67ee348978333d1.r2.dev/2025-11-25-cloudflare-plugin/96n1j6ngatjl.png)
+![cloudflare-plugin/96n1j6ngatjl](https://pub-dcf0b2529ee44fbfb67ee348978333d1.r2.dev/2025-11-25-cloudflare-plugin/96n1j6ngatjl.png)
 
 
 자세한 플러그인 설정을 아래 Github page 참고
