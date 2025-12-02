@@ -147,7 +147,7 @@ spec:
 EOF
 ```
 
-[jenkins-5.8.104](git@github.com:youngseokyoon/jenkinsci-helm-charts.git)
+[jenkins-5.8.104](https://github.com/youngseokyoon/jenkinsci-helm-charts)
 ```
 git clone git@github.com:youngseokyoon/jenkinsci-helm-charts.git -b dev
 
