@@ -67,7 +67,7 @@ imgur 에서 신규 유저 가입 중단 및 신규 app 등록이 중단 된 것
 
 4. User API 토큰 생성
 
-![[6p504jjnq3ff.png](https://pub-dcf0b2529ee44fbfb67ee348978333d1.r2.dev/6p504jjnq3ff.png)
+![6p504jjnq3ff.png](https://pub-dcf0b2529ee44fbfb67ee348978333d1.r2.dev/6p504jjnq3ff.png)
 
 5. API 토큰 생성
 - obsidian-images 라는 버킷에만 접근 가능한 1년 access Token 생성함
